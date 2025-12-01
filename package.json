@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npx http-server -c-1 -p 8080 ./ -a 127.0.0.1",
+    "start": "node start-server.js",
     "open": "powershell -NoProfile -Command start http://localhost:8080"
   },
   "description":"Simple static portfolio scaffold",
