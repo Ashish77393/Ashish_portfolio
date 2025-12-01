@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node start-server.js",
+    "dev": "npx http-server -c-1 -p 8080 ./ -a 0.0.0.0",
     "open": "powershell -NoProfile -Command start http://localhost:8080"
   },
   "description":"Simple static portfolio scaffold",
