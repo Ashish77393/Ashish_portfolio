@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#071226" />
+    <title>Ashish Kumar Singh</title>
+    <meta
+      name="description"
+      content="Personal portfolio — projects, skills, contact."
+    />
+    <!-- Use a clean, modern font + fallbacks -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <h1 class="brand">Ashish <span class="accent">Kumar</span> Singh</h1>
+        <nav class="main-nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggle" class="btn small">Toggle</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero container" aria-label="Introduction">
+        <div class="hero-left">
+          <p class="eyebrow">Hello — I’m</p>
+          <h2>
+            Ashish Kumar Singh
+            <span class="tagline"
+              >Data science & web developer — building practical,
+              production-ready solutions.</span
+            >
+          </h2>
+          <p>
+            I build practical ML and web solutions with clear user value. I
+            previously worked on an Email Spam Classification project that uses
+            Python + scikit-learn.
+          </p>
+          <p class="cta">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn outline" href="ashish kumar singh.pdf" download
+              >Download CV</a
+            >
+          </p>
+        </div>
+        <div class="hero-right">
+          <img src="images/ashish.jpeg" alt="profile" />
+        </div>
+      </section>
+
+      <section id="about" class="container about">
+        <h3>About</h3>
+        <p>
+          We are a passionate team driven by innovation, creativity, and
+          technology. Our focus is on building smart, efficient, and
+          user-centric solutions that solve real-world problems. With experience
+          in Artificial Intelligence, Machine Learning, Web Development, Data
+          Analytics, and full-stack application development, we prioritize
+          quality, performance, and continuous improvement. We believe in
+          learning through experience, experimenting with ideas, and
+          transforming concepts into meaningful products. Our journey reflects
+          dedication, growth, and a strong commitment to excellence. By
+          combining technical skills with curiosity and teamwork, we aim to
+          create solutions that add value, inspire development, and make
+          technology more accessible for everyone.
+        </p>
+      </section>
+
+      <section id="projects" class="container projects">
+        <div class="section-header">
+          <h3>Selected projects</h3>
+          <p class="section-sub">
+            A few representative projects that highlight web apps and data work.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project">
+            <img
+              src="images/movie.jpg"
+              alt="spam project"
+              style="width: 100%; border-radius: 6px; margin-bottom: 0.6rem"
+            />
+            <h4>Movie Recomedation-System</h4>
+            <p>
+              Classic ML project — preprocessing, vectorization, classifier,
+              evaluation (see the workspace root for source if present).
+            </p>
+            <p class="meta">
+              <strong>Tech</strong>: Python, scikit-learn, pandas
+            </p>
+            <div class="project-links">
+              <a
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://dataanalysistools-jtoklzw4zy689y2kqk5g4h.streamlit.app/"
+                >View Project</a
+              >
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="images/data.jpg" alt="site" class="project-image" />
+            <h4 class="project-title">Data Analysis Using Python</h4>
+            <p class="project-description">
+              Upload your dataset and see all the results.
+            </p>
+            <p class="project-tech">
+              <strong>Tech:</strong> Python, scikit-learn, pandas, matplotlib,
+              seaborn
+            </p>
+            <div class="project-links">
+              <a
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://dataanalysistools-jtoklzw4zy689y2kqk5g4h.streamlit.app/"
+                >View Project</a
+              >
+            </div>
+          </article>
+
+          <article class="project">
+            <img
+              src="images/spam.jpg"
+              alt="site"
+              style="width: 100%; border-radius: 6px; margin-bottom: 0.6rem"
+            />
+            <h4>Email Spam Detection Using Classification Model</h4>
+            <p>Detect the mail spam or not if enter the Text of mail</p>
+            <p class="meta">
+              <strong>Tech</strong>: Python, scikit-learn, django,pandas
+            </p>
+            <div class="project-links">
+              <a
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://dataanalysistools-jtoklzw4zy689y2kqk5g4h.streamlit.app/"
+                >View Project</a
+              >
+            </div>
+          </article>
+
+          <article class="project">
+            <img
+              src="images/Hotel.jpg"
+              alt="spam project"
+              style="width: 100%; border-radius: 6px; margin-bottom: 0.6rem"
+            />
+            <h4>Movie Recomedation-System</h4>
+            <p>
+              Classic ML project — preprocessing, vectorization, classifier,
+              evaluation (see the workspace root for source if present).
+            </p>
+            <p class="meta">
+              <strong>Tech</strong>: Python, scikit-learn, pandas
+            </p>
+            <div class="project-links">
+              <a
+                class="btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://dataanalysistools-jtoklzw4zy689y2kqk5g4h.streamlit.app/"
+                >View Project</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="container skills">
+        <div class="section-header">
+          <h3>Skills</h3>
+          <p class="section-sub">Technologies and tools I use frequently.</p>
+        </div>
+        <ul class="skills-list">
+          <li>• JavaScript • React • MySQL</li>
+          <li>• MongoDB • MS-Office • Machine Learning</li>
+          <li>• Natural Language Processing (NLP) • Data Analytics • CSS3</li>
+          <li>• HTML • Django • Power BI</li>
+          <li>• Git & Github • Python • OOPS</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="container contact">
+        <div class="section-header">
+          <h3>Contact</h3>
+          <p class="section-sub">Let’s build something — prefer email first.</p>
+        </div>
+        <p>
+          Prefer email first —
+          <a href="mailto:Ashishkumar77393@gmail.com"
+            >Ashishkumar77393@gmail.com</a
+          >
+        </p>
+        <form
+          id="contactForm"
+          class="contact-form"
+          action=""
+          onsubmit="return handleForm(event)"
+        >
+          <div class="row">
+            <input name="name" placeholder="Your name" required />
+            <input name="email" placeholder="Email" type="email" required />
+          </div>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button class="btn">Send (mailto)</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>Built with ❤️ — deploy to GitHub Pages or any static host</small>
+        <div class="social">
+          <a
+            href="https://github.com/Ashish77393"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/ashish-kumar-singh-1074a325a/
+"
+            target="_blank"
+            rel="noopener"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
