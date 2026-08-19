@@ -545,3 +545,117 @@ p {
 .project {
   background-color: rgb(192, 112, 129);
 }
+/* ============================================
+   APPEND EVERYTHING BELOW TO THE END OF styles.css
+   ============================================ */
+
+/* ---- Total Visits counter (footer) ---- */
+.visit-counter {
+  margin: 0.5rem 0;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+/* ---- Job Notification Popup ---- */
+.job-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+.job-popup.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.job-popup-card {
+  background: var(--bg-color, #fff);
+  color: var(--text-color, #111);
+  width: min(360px, 90vw);
+  border-radius: 14px;
+  padding: 28px 24px 22px;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: job-popup-in 0.3s ease;
+}
+
+@keyframes job-popup-in {
+  from { transform: translateY(12px) scale(0.97); opacity: 0; }
+  to   { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.job-popup-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.6;
+}
+.job-popup-close:hover { opacity: 1; }
+
+.job-popup-icon { font-size: 32px; margin-bottom: 6px; }
+
+.job-popup-title {
+  margin: 4px 0 4px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.job-popup-sub {
+  margin: 0 0 18px;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.job-popup-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.job-popup-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 9px;
+  background: var(--accent-bg, #f3f4f6);
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.job-popup-link span {
+  font-weight: 400;
+  font-size: 0.78rem;
+  opacity: 0.65;
+}
+
+.job-popup-link:hover {
+  transform: translateY(-2px);
+  background: var(--accent-bg-hover, #e5e7eb);
+}
+
+.job-popup-dismiss-label {
+  display: block;
+  font-size: 0.78rem;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.job-popup-dismiss-label input { margin-right: 6px; }
